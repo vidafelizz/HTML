@@ -3,7 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <title>myHome</title>
+<style type="text/css">
+thead {
+	background-color: silver;
+}
+a:link {
+ text-decoration: none; /* 밑줄제거 */
+ color: red;
+}
+
+a:hover { /* 마우스가 올라갈 때 */
+ text-decoration: line-through;
+ color: blue;
+}
+
+a:visited { /* 방문한 링크 */
+ text-decoration: underline;
+ color: maroon;
+}
+
+a:active { /* 마우스 클릭한 순간 */
+ text-decoration: overline;
+ color: green;	
+}
+</style>
 </head>
+
 <body>
 <audio autoplay controls>
  <source src="../audio/air.mp3" type="audio/mpeg">
@@ -14,12 +39,14 @@
 
 <table border="1" style="width: 100%" id="home">
  <caption><strong style="font-size: 50px">프렌차이즈 카페 메뉴 추천</strong></caption>
+<thead>
  <tr>
   <th width="10%"></th>
   <th width="10%">카페이름</th>
   <th>대표 메뉴 보기</th>
   <th width="10%">SNS 공식 계정</th>
  </tr>
+</thead>
  <tr>
   <td><a href="https://www.starbucks.co.kr/index.do"><img alt="" src="https://image.istarbucks.co.kr/common/img/main/rewards-logo.png" width="150px" height="100px"></a></td>
   <td style="text-align: center;">스타벅스</td>
@@ -46,10 +73,12 @@
  
 <table border="1" style="width: 100%" id="star">
  <caption><strong style="font-size: 40px; color: white; background: green">스타벅스 추천 Top3</strong></caption>
+ <thead>
  <tr>
   <th width="10%">사진</th>
   <th>메뉴</th>
   <th>칼로리 <sub>1회 제공기준</sub></th>
+  </thead>
  </tr>
  <tr>
   <td><img alt="" src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[9200000000487]_20210430112319174.jpg" width="150px" height="150px"></td>
@@ -63,7 +92,7 @@
  </tr>
  <tr>
   <td><img alt="" src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[107031]_20210419125350068.jpg" width="150px" height="150px"></td>
-  <td style="text-align: center">바닐라콜드브루</td>
+  <td style="text-align: center">패션 탱고 티 레모네이드 피지오</td>
   <td style="text-align: center;">tall/355ml, 65kcal</td>
  </tr>
 </table>
@@ -76,10 +105,12 @@
  
 <table border="1" style="width: 100%" id="two">
  <caption><strong style="font-size: 40px; color: red; background: black;">투썸플레이스 추천 Top3</strong></caption>
+ <thead>
  <tr>
   <th width="10%">사진</th>
   <th>메뉴</th>
   <th>칼로리 <sub>1회 제공기준</sub></th>
+  </thead>
  </tr>
  <tr>
   <td><img alt="" src="https://www.twosome.co.kr/resources/images/content/img_t_menu01@3x.png" width="150px" height="150px"></td>
@@ -106,10 +137,12 @@
  
 <table border="1" style="width: 100%" id="paik">
  <caption><strong style="font-size: 40px; color: yellow; background: navy;">빽다방 추천 Top3</strong></caption>
+ <thead>
  <tr>
   <th width="10%">사진</th>
   <th>메뉴</th>
   <th>칼로리 <sub>1회 제공기준</sub></th>
+  </thead>
  </tr>
  <tr>
   <td><img alt="" src="https://paikdabang.com/wp-content/uploads/2018/05/ICED-%EC%9B%90%EC%A1%B0%EC%BB%A4%ED%94%BC-450x588.png" width="150px" height="150px"></td>
