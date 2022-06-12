@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>radiof.html</title>
+</head>
+<body>
+
+<!-- 웹프로그래밍에서 서버에 값을 전달할 때는 form태그를 사용
+전송방식(method)
+1. get방식 - 페이지를 요청하는 용도
+2. post방식 - 데이터를 전달하는 용도 
+
+action - 데이터를 받을 주소(파일 또는 url)
+ -->
+<form method="post" action="radiof_result.jsp">
+이름 : <input type="text" name="name"><br>
+나이 : <input type="text" name="age"><br>
+<!-- 라디오버튼 : 같은 그룹으로 묶으려면 name의 값을 같게 해야함
+				서버에서는 value에 지정한 값이 넘어감 -->
+성별 : <input type="radio" name="gender" value="male">남성
+	  <input type="radio" name="gender" value="female">여성
+<!-- 데이터 제출 버튼 -->
+<input type="submit" value="확인">
+</form>
+
+</body>
+</html>
