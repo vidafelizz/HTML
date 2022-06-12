@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function check</title>
+
+<script type="text/javascript">
+// 자바스크립트 코드 영역
+// function 함수이름(){ }
+function check() {
+	var price=document.input.price.value;
+	var amount=document.input.amount.value;
+	if(price == "") { // 빈값이면
+		alert("가격을 입력하세요"); // 경고창 띄우기(모달창)
+		doucument.input.price.focus(); // 입력포커스를 이동시킴
+		return; // 함수를 호출한 곳으로 되돌아감
+	}
+	if(amount == "") {
+		alter("수량을 입력하세요");
+		document.input.amount.focus();
+		return;
+	}
+	document.input.submit(); // 수동으로 submit()함수를 사용해 데이터를 제출
+}
+
+</script>
+
+</head>
+<body>
+<form name="input" method="post" action="buttonf_result.jsp">
+ 가격 : <input type="text" name="price"><br>
+ 수량 : <input type="text" name="amount"><br>
+ <!-- on+이벤트 : onclick, onfocus, onchange... -->
+ <!-- type="button"은 데이터 제출 기능이 없다. 대신 자바스크립트를 활용해서 데이터 제출 함 -->
+ <input type="button" value="계산" onclick="check()">
+</form>
+
+</body>
+</html>
