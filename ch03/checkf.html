@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>checkbox form.html</title>
+</head>
+<body>
+<!-- checkbox : 다중선택, checked : 기본선택값 -->
+<!-- jsp에서 한꺼번에 들어오는 값을 처리 => 배열 -->
+
+<form method="post" action="checkf_result.jsp">
+좋아하는 과일을 선택하세요<br>
+<input type="checkbox" name="fruits" value="apple"> 사과
+<input type="checkbox" name="fruits" value="watermelon" checked> 수박
+<input type="checkbox" name="fruits" value="banana"> 바나나
+<input type="submit" value="확인">
+<input type="reset" value="선택취소">
+</form>
+
+</body>
+</html>
