@@ -8,17 +8,21 @@
 </head>
 
 <body>
-<h3 style="text-align: center">id/password</h3>
-
 <div align="center">
 <%
-request.setCharacterEncoding("utf-8");
-String id = request.getParameter("id");
-String password = request.getParameter("password");
+String userid=request.getParameter("userid");
+String pwd=request.getParameter("pwd");
+String message="";
+if(userid.equals("kim")&& pwd.equals("1234")) {
+	message="김길동님 환영합니다.";
+} else {
+	message="아이디 또는 비밀번호가 일치하지 않습니다.";
+}
 %>
+<!-- 출력 -->
+<%= message %><br>
+<a href="index.html">홈으로 돌아가기</a>
 
-아이디 : <%= id %> <br>
-비밀번호 : <%= password %> <br>
 </div>
 </body>
 </html>

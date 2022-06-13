@@ -3,6 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Summer Festival</title>
+<script type="text/javascript">
+function check() {
+	var userid = document.form1.userid.value;
+	var pwd = document.form1.pwd.value;
+	if(userid=="") {
+		alert("아이디를 입력하세요.")
+		document.form1.userid.focus();
+		return;
+	}
+	if(pwd=="") {
+		alert("비밀번호를 입력하세요.")
+		document.form1.pwd.focus();
+		ruturn;
+	}
+	document.form1.submit();
+}
+</script>
 <style type="text/css">
 * {margin: 0px; padding: 5px 0px}
 
@@ -51,17 +68,20 @@ background: #0030E5;
   <h1><a href="#home" style="color: white">2022 Summer Festival🎸</a></h1>
  </header>
 </div>
+
 <section id="log">
  <div align="right">
- <form method="post" action="index_result.jsp">
-   아이디&nbsp;<input type="text" name="id" required>
-   비밀번호&nbsp;<input type="password" name="password" required>
-   <input type="submit" value="확인" required="required"><br>
- </form>
+ <form name="form1" action="index_result.jsp">
+  아이디 : <input type="text" name="userid">
+  비밀번호 : <input type="password" name=pwd>
+  <input type="button" value="로그인" onclick="check()">
+</form>
+
   <span><a href="#">아이디/비밀번호 찾기</a></span>&nbsp;
   <span><a href="login.html">회원가입</a></span>
  </div>
- 
+</section>
+
 <div align="center" style="color: black">
  <nav>
   <table border="1" width="100%">

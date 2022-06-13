@@ -31,5 +31,6 @@ String add = request.getParameter("add");
 이메일: <%= user_mail %> <br>
 주소 : <%= add %>
 
+<a href="index.html">홈으로 돌아가기</a>
 </body>
 </html>
