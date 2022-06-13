@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>telEx</title>
+</head>
+<body>
+<form action="telEx_result.jsp" method="post">
+ <!-- 
+ required : 필수 입력 옵션임을 알리는 안내 경고창을 띄움
+ pattern : 정규표현식(regular expression)
+ d{d,4} : 숫자 3자리 또는 4자리 의미
+  -->
+ 
+ <p>전화번호 입력 : </p>
+ <div>
+  <input type="tel" pattern="(010)-\d{3,4}-\d{4}" name="tel"
+  title="010-####-####" required>
+ </div>
+ <div>
+  <input type="submit" value="전송">
+ </div>
+</form>
+
+</body>
+</html>
