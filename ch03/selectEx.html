@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>selectEx.html</title>
+</head>
+<body>
+<form method="post" action="select_result.jsp">
+자동차를 선택하세요 <br>
+<!-- 
+<option value="서버에 전달되는 값">화면표시용 값</option>
+multiple : 펼침목록
+selected : 기본선택값
+size : 펼침목록의 개수
+ -->
+<select name="cars" multiple size="4">
+ <option value="bmw">BMW</option>
+ <option value="benz">Benz</option>
+ <option value="hyundai" selected>현대</option>
+ <option value="kia">기아</option>
+</select>
+
+<input type="submit" value="확인">
+</form>
+</body>
+</html>
