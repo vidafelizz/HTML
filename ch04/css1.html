@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css1</title>
+<!-- 내부 스타일시트 (css 태그) -->
+<style type="text/css">
+p {
+	color: blue;
+	background-color: yellow;
+	font-size: 40px;
+}
+/* p태그 중에서 class가 style1인 태그 */
+p.style1 {
+	font-size: 20px;
+	color: red;
+}
+/* 태그에 관계없이 class가 style2인 태그 */
+.style2 {
+	font-size: 40px;
+	color: aqua;
+}
+
+</style>
+</head>
+<body>
+<!-- 중복되는 css가 있을 땐 우선 인라인 스타일시트가 최우선 적용됨 -->
+<p style="color: aqua; background: fuchsia">This is a paragraph.</p>
+<p class="style1">두번째 단락</p>
+<p class="style2">세번째 단락</p>
+<span class="style2">첫번째 span</span>
+
+</body>
+</html>
