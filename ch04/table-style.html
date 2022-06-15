@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table-style</title>
+<style type="text/css">
+table th, table td {
+  margin: 1px;
+  padding: 8px;
+}
+
+table {
+  border-top: 3px solid;
+  border-bottom: 1px solid;
+  border-collapse: collapse; /* table과 td사이의 간격을 없앰 */
+}
+
+table th {
+  background-color: purple;
+  color: white;
+  border-bottom: 2px solid black;
+  font-size: 1.4em;
+}
+
+table td {
+  border-bottom: 1px dotted;
+}
+
+caption {
+  font-size: 24px;
+  margin: 5px;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: aqua;
+}
+
+tbody > tr:nth-child(even) {
+  background: rgb(214, 158, 210);
+}
+
+</style>
+</head>
+<body>
+<table>
+ <caption>학교</caption>
+ <thead>
+  <tr>
+   <th>연도</th>
+   <th>학교명</th>
+   <th>주소</th>
+  </tr> 
+ </thead>
+ <tbody>
+  <tr>
+   <td>1992</td>
+   <td>강남 유치원</td>
+   <td>서울 강남구 역삼동</td>
+  </tr>
+  <tr>
+   <td>1998</td>
+   <td>강남 초등학교</td>
+   <td>서울 강남구 역삼동</td>
+  </tr>
+  <tr>
+   <td>2001</td>
+   <td>강남 중학교</td>
+   <td>서울 강남구 역삼동</td>
+  </tr>
+  <tr>
+   <td>2004</td>
+   <td>강남 고등학교</td>
+   <td>서울 강남구 역삼동</td>
+  </tr> 
+ </tbody>
+</table>
+
+</body>
+</html>
