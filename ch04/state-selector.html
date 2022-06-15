@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>state-selector</title>
+<!-- 내부 스타일시트 -->
+<style type="text/css">
+div {
+  margin-top: 15px
+}
+
+a {
+  margin: 0;
+  padding: 3px;
+  border: 2px solid purple;
+  text-decoration: none;
+  background: purple;
+  color: white;
+}
+
+span > a:hover { /* a태그 위에 마우스가 올라갈때 효과*/
+  background: white;
+  color: purple;
+}
+
+span > a:active {
+  background: #ff00ff; 
+  color: white;
+}
+
+div > a:link {
+  background: white;
+  color: purple;
+}
+
+div > a:visited { /* 한번 이상 방문했던 링크 */
+	background: white;
+	color: green;
+}
+
+</style>
+
+
+</head>
+<body>
+<span><a href="basic-selector.html">버튼1</a></span>
+<span><a href="basic-selector.html">버튼2</a></span>
+<span><a href="#">버튼3</a></span>
+<span><a href="#">버튼4</a></span>
+<div>
+ <a href="#">버튼5</a>
+ <a>버튼6</a>
+ <a href="basic-selector.html">버튼7</a>
+ <a>버튼8</a>
+</div>
+</body>
+</html>
