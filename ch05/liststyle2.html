@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>liststyle2</title>
+<style type="text/css">
+ol {
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red; 
+  padding: 10px 0; /* 위 아래는 10px, 좌우는 0px */
+}
+
+ol li {
+  display: inline;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 10px; /* 글자간격 */
+}
+
+ol li a {text-decoration: none; color: black;}
+ol li a:hover {
+	text-decoration: underline;
+}
+
+div {
+  display: inline;
+  float: right; /* 화면에서 오른쪽에서 왼쪽 방향으로 배치 */
+  border: 1px solid red;
+}
+
+</style>
+</head>
+<body>
+<ol>
+ <li><a href="#">Home</a></li>
+ <li><a href="#">Blog</a></li>
+ <li><a href="#">About</a></li>
+ <li><a href="#">Contact</a></li>
+</ol>
+<div>div1</div>
+<div>div1</div>
+<div>div1</div>
+
+</body>
+</html>
